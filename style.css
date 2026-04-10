@@ -76,9 +76,6 @@ nav a:hover {
     gap: 1rem;
 }
 
-
-/* container behavior */
-
 main {
     display: flex;
     flex-direction: column;
@@ -86,3 +83,15 @@ main {
 
 
 /*MEDIA QUERIES */
+
+@media (min-width: 700px) {
+    #meals {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #meal1,
+    #meal2,
+    #meal3 {
+        width: 30%;
+    }
+}
