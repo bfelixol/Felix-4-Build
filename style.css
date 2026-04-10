@@ -9,31 +9,27 @@ body {
     background-color: rgb(217, 241, 217);
 }
 
+
+/*MEDIA QUERIES*/
+
 @media (min-width: 768px) {
-    nav ul {
-        flex-direction: row;
+    body {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+    }
+}
+
+@media (min-width: 768px) {
+    #meal-cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
         justify-content: center;
     }
-    header {
-        text-align: center;
+    #meal1,
+    #meal2,
+    #meal3 {
+        width: 50%;
     }
-}
-
-body {
-    background: linear-gradient(135deg, rgb(245, 200, 245), rgb(178, 222, 238), rgb(217, 241, 217));
-    min-width: 620px;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 1rem;
-}
-
-
-/* GLOBAL RESET */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 
@@ -49,6 +45,14 @@ body {
 
 
 /* GRID AREAS */
+
+body {
+    background: linear-gradient(135deg, rgb(245, 200, 245), rgb(178, 222, 238), rgb(217, 241, 217));
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "main" "footer";
+    gap: 1rem;
+}
 
 header {
     grid-area: header;
@@ -110,4 +114,21 @@ nav a:hover {
     background-color: rgb(227, 241, 246);
     padding: 1rem;
     margin: 0.5rem;
+}
+
+
+/*MEAL CARD STYLES*/
+
+#meal1,
+#meal2,
+#meal3 {
+    background-color: rgb(231, 244, 245);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#meal-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
