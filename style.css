@@ -2,3 +2,23 @@
 
 
 /*Global Styles (Mobile First)*/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(217, 241, 217);
+}
+
+@media screen and (min-width:600px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(178, 222, 238);
+    }
+}
+
+@media screen and (min-width:800px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(245, 200, 245);
+    }
+}
