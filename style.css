@@ -2,3 +2,45 @@
 
 
 /*Global Styles (Mobile First)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY GRID LAYOUT */
+
+body {
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer";
+    font-family: Arial, sans-serif;
+}
+
+
+/* GRID AREAS */
+
+header {
+    grid-area: header;
+    padding: 1rem;
+    text-align: center;
+    background-color: #e8f5e9;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #c8e6c9;
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+    background-color: #e8f5e9;
+}
