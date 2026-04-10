@@ -34,12 +34,12 @@
             grid-template-columns: 1fr;
             grid-template-areas: "header" "nav" "main" "footer";
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, rgb(245, 200, 245), rgb(178, 222, 238), rgb(217, 241, 217));
+            background: linear-gradient(135deg, rgb(244, 212, 244), rgb(178, 222, 238), rgb(217, 241, 217));
         }
         /* GRID AREAS */
         
         body {
-            background: linear-gradient(135deg, rgb(245, 200, 245), rgb(178, 222, 238), rgb(217, 241, 217));
+            background: linear-gradient(135deg, rgb(244, 212, 244), rgb(178, 222, 238), rgb(217, 241, 217));
             display: grid;
             grid-template-columns: 1fr;
             grid-template-areas: "header" "nav" "main" "footer";
@@ -79,7 +79,7 @@
         
         nav a {
             text-decoration: none;
-            background-color: rgb(245, 200, 245);
+            background-color: rgb(217, 241, 217);
             padding: 1rem 2rem;
             color: white;
             font-size: 1.2em;
@@ -88,7 +88,7 @@
         
         nav a:hover {
             background-color: white;
-            color: rgb(245, 200, 245);
+            color: rgb(217, 241, 217);
         }
         
         .card-row {
@@ -142,4 +142,19 @@
             line-height: 1.6;
             letter-spacing: .5px;
             word-spacing: 2px;
+        }
+        /* UNIVERSAL SELECTOR */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* TYPE LIST SELECTOR*/
+        
+        header,
+        footer {
+            margin: .5rem;
+            padding: .5rem;
+            border: 3px solid white;
+            background-color: rgb(217, 241, 217);
         }
