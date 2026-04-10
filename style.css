@@ -35,14 +35,6 @@
             grid-template-areas: "header" "nav" "main" "footer";
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, rgb(244, 212, 244), rgb(178, 222, 238), rgb(217, 241, 217));
-        }
-        /* GRID AREAS */
-        
-        body {
-            background: linear-gradient(135deg, rgb(244, 212, 244), rgb(178, 222, 238), rgb(217, 241, 217));
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas: "header" "nav" "main" "footer";
             gap: 1rem;
         }
         
@@ -157,4 +149,11 @@
             padding: .5rem;
             border: 3px solid white;
             background-color: rgb(217, 241, 217);
+        }
+        
+        h1+p {
+            text-align: center;
+            font-size: 1.2em;
+            padding: 1rem;
+            margin: 0.5rem;
         }
